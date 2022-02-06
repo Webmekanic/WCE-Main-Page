@@ -8,8 +8,8 @@ body {
   position: relative;
 }
 main {
-  padding-left: 1.3rem;
-  padding-right: 1.3rem;
+  padding-left: 0.8rem;
+  padding-right: 0.8rem;
 }
 
 .pageNavBar {
@@ -403,10 +403,8 @@ h5 {
     width: 100%;
     display: block;
     margin: 0;
-    /* padding: 0 2rem; */
   }
   .homeArticle {
-    /* border: 2px solid red; */
     flex-direction: column;
     max-width: unset;
     width: 100%;
@@ -450,6 +448,7 @@ h5 {
     color: #1e2839;
     font-size: 30px;
     font-weight: 700;
+    padding-left: 1.3rem;
   }
 
   .coinParagraph {
@@ -460,6 +459,13 @@ h5 {
     margin-top: 0.8rem;
     color: #767c86;
     margin-left: 0;
+    padding-left: 1.3rem;
+  }
+  .coinTab {
+    padding-left: 1.3rem;
+  }
+  .coinList {
+    padding-left: 1.3rem;
   }
 
   .coinHeader {
