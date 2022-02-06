@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100&display=swap"
+      rel="stylesheet"
+    />
+    <title>RNTM Design Test</title>
+  </head>
+  <body>
+    <nav class="pageNavBar">
+      <header>
+        <a href="http://"
+          ><img class="pageLogo" src="./images/wcelogo.svg" alt="WCELOGO"
+        /></a>
+        <p class="PageLogoText">WCE</p>
+      </header>
+      <ul class="navItem">
+        <li class="navItemList"><a href="#"></a>aОбменять валюту</li>
+        <li class="navItemList"><a href="#"></a>Правила сайта</li>
+        <li class="navItemList"><a href="#"></a>FAQ</li>
+        <li class="navItemList"><a href="#"></a>Обратная связь</li>
+      </ul>
+      <ul class="navProfile">
+        <li class="navProfileList" id="profileName">Профиль</li>
+        <li class="navProfileList" id="navProfileIcon">
+          <i class="far fa-user"></i>
+        </li>
+        <li class="navProfileList" id="navProfileIcon2">
+          <span class="fasSpan"><i class="fas fa-bars"></i></span>
+        </li>
+      </ul>
+    </nav>
+
+    <section id="home">
+      <article class="homeArticle">
+        <div class="homeCard">
+          <h1 class="homeHeader">Сервис обмена криптовалют</h1>
+          <p class="homeParagraph">
+            Все обмены проходят круглосуточно в автоматическом
+            и полуавтоматическом режимах, с многоуровневой системой серверной
+            защиты
+          </p>
+        </div>
+        <form class="homeForm">
+          <label class="homeLabel" for="fname">Отдаете</label><br />
+          <select name="form" id="form">
+            <optgroup>
+              <option class="myOption" value="Выберите валюту">
+                Выберите валюту
+              </option>
+            </optgroup>
+          </select>
+          <input
+            type="text"
+            id="lname"
+            name="lname"
+            placeholder="Введите сумму"
+          />
+          <label class="homeLabel" for="fname" id="formPart">Получаете</label
+          ><br />
+          <select name="form" id="form">
+            <optgroup>
+              <option class="myOption" value="Выберите валюту">
+                Выберите валюту
+              </option>
+            </optgroup>
+          </select>
+          <input type="text" id="tname" name="lname" placeholder="Сумма" />
+          <button class="formButton">Обменять валюту</button>
+        </form>
+      </article>
+    </section>
+    <section id="coins">
+      <div class="coinHeader">
+        <h2>Резервы сервиса</h2>
+        <p class="coinParagraph">
+          Если Вам не хватает резервов для обмена, нажмите на интересующую Вас
+          валюту и отправьте нам запрос на пополнение резерва.
+        </p>
+      </div>
+      <div class="coinTab">
+        <button class="tabButton">Банки</button>
+        <button class="tabButton" id="tabCoin">Coin</button>
+        <button class="tabButton">Платежные системы</button>
+      </div>
+      <ul class="coinList">
+        <li class="coinListItem">
+          <img src="./images/bitcoin.svg" alt="Bitcoin" />
+          <h4>Bitcoin</h4>
+          <p class="coinPrice">1.124 <span>BTC</span></p>
+        </li>
+        <li class="coinListItem">
+          <img src="./images/eth.svg" alt="Ethereum" />
+          <h4>Ethereum</h4>
+          <p class="coinPrice">137 <span>ETH</span></p>
+        </li>
+        <li class="coinListItem">
+          <img src="./images/tether.svg" alt="Tether" />
+          <h4>USDT ERC20</h4>
+          <p class="coinPrice">20 601 040 <span>USDT</span></p>
+        </li>
+        <li class="coinListItem">
+          <img src="./images/tether.svg" alt="Tether" />
+          <h4>USDT TRC20</h4>
+          <p class="coinPrice">20 446 858 <span>USDT</span></p>
+        </li>
+        <li class="coinListItem">
+          <img src="./images/dai.svg" alt="Dai" />
+          <h4>Dai</h4>
+          <p class="coinPrice">79 031 <span>DAI</span></p>
+        </li>
+        <li class="coinListItem">
+          <img src="./images/pax.svg" alt="Pax" />
+          <h4>Pax Dollar (USDP)</h4>
+          <p class="coinPrice">1 313 134 <span>USDP</span></p>
+        </li>
+        <li class="coinListItem">
+          <img src="./images/trueusd.svg" alt="True USD" />
+          <h4>TrueUSD ERC20</h4>
+          <p class="coinPrice">1 386 964 <span>TUSD</span></p>
+        </li>
+        <li class="coinListItem">
+          <img src="./images/usdcoin.svg" alt="USDcoin" />
+          <h4>USD Coin ERC20</h4>
+          <p class="coinPrice">1 645 928<span>USDC</span></p>
+        </li>
+        <li class="coinListItem">
+          <img src="./images/monero.svg" alt="Monero" />
+          <h4>Monero</h4>
+          <p class="coinPrice">115 341 XMR</p>
+        </li>
+        <li class="coinListItem">
+          <img src="./images/litecoin.svg" alt="Litecoin" />
+          <h4>Litecoin</h4>
+          <p class="coinPrice">106 663 LTC</p>
+        </li>
+        <li class="coinListItem">
+          <img src="./images/tron.svg" alt="Tron" />
+          <h4>Tron</h4>
+          <p class="coinPrice">20 529 779 TRX</p>
+        </li>
+        <li class="coinListItem">
+          <img src="./images/dash.svg" alt="Dash" />
+          <h4>Bitcoin</h4>
+          <p class="coinPrice">50 678 DASH</p>
+        </li>
+        <li class="coinListItem">
+          <img src="./images/cardano.svg" alt="Cardano (ADA)" />
+          <h4>Cardano (ADA)</h4>
+          <p class="coinPrice">10 264 453 ADA</p>
+        </li>
+        <li class="coinListItem">
+          <img src="./images/zcash.svg" alt="ZCash" />
+          <h4>ZCash</h4>
+          <p class="coinPrice">61 913 ZEC</p>
+        </li>
+        <li class="coinListItem">
+          <img src="./images/ripple.svg" alt="Ripple" />
+          <h4>Bitcoin</h4>
+          <p class="coinPrice">1 561 775 XRP</p>
+        </li>
+        <li class="coinListItem">
+          <img src="./images/bitcoingold.svg" alt="Bitcoin Gold" />
+          <h4>Bitcoin Gold</h4>
+          <p class="coinPrice">2 606 BTG</p>
+        </li>
+      </ul>
+    </section>
+    <section id="contact">
+      <div class="contactDetails">
+        <div class="contactDetails1">
+          <h5>Навигация</h5>
+          <p class="contactText">Обменять валюту</p>
+          <p class="contactText">Личный кабинет</p>
+        </div>
+        <div class="contactDetails2">
+          <h5>Поддержка</h5>
+          <p class="contactText">Правила сайта</p>
+          <p class="contactText">Предупреждение</p>
+        </div>
+        <form class="contactDetails3">
+          <h5>Обратная связь</h5>
+          <p class="contactText">Ваш вопрос</p>
+          <input type="text" id="baw" name="baw" />
+          <div class="formReg">
+            <section>
+              <label id="fnameInputId" for="fNameInput">Имя</label><br />
+              <input
+                type="text"
+                id="fNameInput"
+                name="fNameInput"
+                placeholder="Александр"
+              />
+            </section>
+            <section>
+              <label id="fnameInputId" class="email" for="fNameInput"
+                >E-mail</label
+              ><br />
+              <input
+                type="text"
+                id="fNameInput"
+                name="fNameInput"
+                placeholder="example@mail.ru"
+              />
+            </section>
+          </div>
+          <p id="formParagraph">
+            Нажимая кнопку “Отправить” вы даете согласие на
+            <span class="span">обработку персональных данных</span>
+          </p>
+          <button class="contactButton">Отправить</button>
+        </form>
+      </div>
+      <footer>
+        <ul class="footerList">
+          <li class="footerListItem">&copy;2021 WCE. Все права защищены</li>
+          <li class="footerListItem" id="footerList">
+            Политика конфиденциальности
+          </li>
+        </ul>
+      </footer>
+    </section>
+  </body>
+</html>
