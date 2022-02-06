@@ -6,6 +6,8 @@
 
 body {
   position: relative;
+  padding-left: 1.3rem;
+  padding-right: 1.3rem;
 }
 
 .pageNavBar {
@@ -97,6 +99,8 @@ header {
   background-size: cover;
   background-position: center;
   border-radius: 15px;
+  padding: 0 2rem;
+  border: 2px solid red;
 }
 .homeArticle {
   max-width: 67%;
@@ -390,21 +394,30 @@ h5 {
   }
   #home {
     background-image: none;
+    height: initial;
+    background-repeat: unset;
+    background-position: unset;
+    background-size: unset;
+    max-width: unset;
+    width: 100%;
+    display: block;
+    margin: 0;
+    /* padding: 0 2rem; */
   }
   .homeArticle {
-    display: flex;
+    /* border: 2px solid red; */
     flex-direction: column;
-    max-width: 95%;
+    max-width: unset;
+    width: 100%;
     margin: auto;
     display: flex;
-    flex-direction: column;
     gap: 1rem;
     padding-top: 2rem;
     color: #1e2839;
   }
   .homeCard {
     color: black;
-    width: 95%;
+    width: 100%;
   }
   .homeHeader {
     color: #1e2839;
@@ -415,7 +428,7 @@ h5 {
   }
   .homeForm {
     background-color: white;
-    width: 95%;
+    width: 100%;
     border-radius: 8px;
     font-weight: lighter;
     border: 1px solid #bcbfc4;
@@ -491,11 +504,6 @@ h5 {
   }
 }
 
-@media (max-width: 1230px) {
-  #home {
-    margin-left: 3rem;
-  }
-}
 @media (min-width: 800px) {
   .homeForm {
     width: 55%;
