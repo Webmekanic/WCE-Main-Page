@@ -91,6 +91,9 @@ header {
 .fasSpan {
   display: none;
 }
+#form {
+  background-color: white;
+}
 
 #home {
   max-width: 1170px;
@@ -420,7 +423,9 @@ h5 {
   }
   .homeHeader {
     color: #1e2839;
+    /* font-family: "Times New Roman", Times, serif; */
   }
+
   .homeParagraph {
     color: #767c86;
     font-weight: bolder;
@@ -452,20 +457,28 @@ h5 {
   }
 
   .coinParagraph {
-    width: 60%;
+    width: 80%;
     font-style: normal;
     font-size: 15px;
     color: #1e2839;
-    margin-top: 0.8rem;
+    margin-top: 0.3rem;
     color: #767c86;
     margin-left: 0;
     padding-left: 1.3rem;
   }
   .coinTab {
     padding-left: 1.3rem;
+    padding-right: 1.3rem;
+    /* border: 2px solid red; */
+  }
+  #tab2 {
+    /* border: 2px solid red; */
+    margin-left: 1.3rem;
+    margin-top: 1rem;
   }
   .coinList {
     padding-left: 1.3rem;
+    padding-right: 1.3rem;
   }
 
   .coinHeader {
